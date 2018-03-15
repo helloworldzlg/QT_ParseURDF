@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book time="2013/6/13" id="1">
+        <title>C++ primer</title>
+        <author>Stanley Lippman</author>
+    </book>
+
+    <book time="2007/5/25" id="2">
+        <title>Thinking in Java</title>
+        <author>Bruce Eckel</author>
+    </book>
+</library>

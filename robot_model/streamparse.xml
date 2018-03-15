@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<COMMAND>  
+    <OBJECT>USER</OBJECT>  
+    <ACTION>LOGIN</ACTION>  
+    <DATA>  
+        <USER NAME="root" PASSWORD="123456"/>  
+    </DATA>  
+</COMMAND>

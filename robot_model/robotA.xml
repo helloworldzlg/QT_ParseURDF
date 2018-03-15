@@ -1,0 +1,32 @@
+<robot name="test_robot">
+    <link name="torso">
+        <visual>
+            <geometry>
+                <mesh filename="package://robot_model/meshes/Torso.dae" scale="0.1 0.1 0.1"/>
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 0.1"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://robot_model/meshes/Torso_0.10.stl" scale="0.1 0.1 0.1"/>
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        </collision>
+    </link>
+
+    <link name="Head">
+        <visual>
+            <geometry>
+                <mesh filename="package://robot_model/meshes/V40/HeadPitch.dae" scale="0.1 0.1 0.1"/>
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://robot_model/meshes/V40/HeadPitch_0.10.stl" scale="0.1 0.1 0.1"/>
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        </collision>
+    </link>
+</robot>
