@@ -18,8 +18,6 @@ Point::Point(int pointType)
     memset(m_orientation, 0, sizeof(m_orientation));
     memset(m_color, 0, sizeof(m_color));
     memset(m_axis, 0, sizeof(m_axis));
-
-    m_pParent     = NULL;
 }
 
 Point::~Point()
@@ -29,7 +27,12 @@ Point::~Point()
 
 void Point::UpdateName(QString name)
 {
-    m_name = name;
+    m_Name = name;
+}
+
+void Point::UpdateParent(QString parent)
+{
+    m_Parent = parent;
 }
 
 void Point::UpdatePosition(QString position)
@@ -76,7 +79,8 @@ void Point::UpdateAxis(QString axis)
     }
 }
 
-void Point::UpdatePointInfo()
+void Point::AddChildList(Point* child)
 {
-
+    child->m_Parent = this->m_Name;
+    this->m_ChildList.push_back(child);
 }

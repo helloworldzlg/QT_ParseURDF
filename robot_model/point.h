@@ -19,23 +19,24 @@ public:
     Point(int pointType);
     ~Point();
 
+    QString m_Name;
+    QString m_Parent;
+    std::vector<Point*> m_ChildList;
+
     void UpdateName(QString name);
+    void UpdateParent(QString parent);
     void UpdatePosition(QString position);
     void UpdateOrientation(QString orientation);
     void UpdateColor(QString color);
     void UpdateAxis(QString axis);
-    void UpdatePointInfo();
+    void AddChildList(Point* child);
 
 private:
     bool isLink;
-    QString m_name;
     double m_position[3];
     double m_orientation[3];
     double m_color[4];
     double m_axis[3];
-
-    Point *m_pParent;
-    std::vector<Point*> m_pChild;
     //Point *m_brothers;
     //Point *m_firstChild;
 };
